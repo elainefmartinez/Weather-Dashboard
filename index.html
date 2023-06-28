@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type = "text/css" href ="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+<div class ="block">
+    <section class="hero is-link">
+        <div class ="hero-body">
+            <div class ="container">
+                <h1 class="title-main has-text-centered"> Weather Dashboard</h1>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <section>
+    <div class ="columns">
+        <div class ="column is-one-third is-narrow"> 
+            <div class ="card">
+                <div class ="card-content is-centered">
+                    <h2 class="title has-text-centered"> Search for a City</h2>
+                    <form action="" method="get" class="search-form">
+                        <div class="field has-addons has-addons-centered">
+                            <div class="control">
+                                <input id="search-name" class="input" type="text" placeholder="Enter City">
+                            </div>
+                            <div class="control">
+                                <button id="search-button" class="button is-link">Search</button>
+                            </div>
+                        </div>
+                    <figure class="image is-128x160 has-text-centered">
+                        <p class="city-info"></p>
+                    </figure>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class ="columns">
+            <div class ="column is-full"> 
+                <div class ="card is-multiline">
+                    <div class ="card-content is-centered">
+                            <h1 class="title has-text-centered" id="city"></h1>
+                                <span id="currentdate"></span>
+                            <ul><img id="icon"></img></ul>
+                            <ul><span id="temp"></span></ul>
+                            <ul><span id="wind"></span></ul>
+                            <ul><span id="humidity"></span></ul>
+                        </figure>
+                </div>
+            </div>
+        </div>
+        
+    <section class ="results">
+    <div class="column">
+        <div class ="column">
+            <h3 class="title"> 5 -Day Forecast:</h3>
+            <div class ="card is-multiline">
+                <div class ="card-content">
+                    <h3><span id="date-one"></span></h3>
+                    <ul><img id="icon-one"></img></ul>
+                    <ul><span id="temp-one"></span></ul>
+                            <ul><span id="wind-one"></span></ul>
+                            <ul><span id="humidity-one"></span></ul>
+                    <figure class="image is-128x128 five-day">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class ="column">
+            <div class ="card">
+                <div class ="card-content">
+                    <h3><span id="date-two"></span></h3>
+                    <ul><img id="icon-two"></img></ul>
+                    <ul><span id="temp-two"></span></ul>
+                            <ul><span id="wind-two"></span></ul>
+                            <ul><span id="humidity-two"></span></ul>
+                    <figure class="image is-128x128 five-day">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class ="column">
+            <div class ="card">
+                <div class ="card-content">
+                    <h3><span id="date-three"></span></h3>
+                    <ul><img id="icon-three"></img></ul>
+                    <ul><span id="temp-three"></span></ul>
+                            <ul><span id="wind-three"></span></ul>
+                            <ul><span id="humidity-three"></span></ul>
+                    <figure class="image is-128x128 five-day">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class ="column">
+            <div class ="card">
+                <div class ="card-content">
+                    <h3><span id="date-four"></span></h3>
+                    <ul><img id="icon-four"></img></ul>
+                    <ul><span id="temp-four"></span></ul>
+                            <ul><span id="wind-four"></span></ul>
+                            <ul><span id="humidity-four"></span></ul>
+                    <figure class="image is-128x128 five-day">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class ="column">
+            <div class ="card">
+                <div class ="card-content">
+                    <h3><span id="date-five"></span></h3>
+                    <ul><img id="icon-five"></img></ul>
+                    <ul><span id="temp-five"></span></ul>
+                            <ul><span id="wind-five"></span></ul>
+                            <ul><span id="humidity-five"></span></ul>
+                    <figure class="image is-128x128 five-day">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </section>
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous"></script>
+
+    
+    <script src="./assets/script.js"></script>    
+</body>
+
+    
+   
+
+
+</html>
