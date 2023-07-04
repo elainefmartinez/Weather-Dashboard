@@ -44,7 +44,7 @@ var cityFetch = function(city) {
 
         
        
-    var fiveDayUrl= "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
+    var fiveDayUrl= "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
         fetch (fiveDayUrl)
         .then(function(response) {
             console.log("check")
